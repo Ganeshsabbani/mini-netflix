@@ -1,0 +1,87 @@
+// home banner
+.home-banner {
+  height: 100vh;
+  overflow: hidden;
+  h1 {
+    font-size: 3.125rem;
+    font-weight: 700;
+  }
+  h2 {
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    font-weight: 400;
+  }
+  .email-form-title {
+    font-size: 1.5rem;
+  }
+  .shadow {
+    background-color: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+  img {
+    max-width: 100%;
+  }
+  .our-story {
+    position: absolute;
+    color: white;
+    text-align: center;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+  }
+  .our-story-mb{
+    display: none;
+  }
+  .input-group {
+    height: 56px;
+    display: flex;
+    column-gap: 20px;
+    input {
+      opacity: 70%;
+      width: 60%;
+      color: #fff;
+      height: 100%;
+      outline: none;
+      background-color: black;
+      border-radius: 8px;
+      padding-left: 20px;
+    }
+    button {
+      background-color: rgb(229, 9, 20);
+      color: #fff;
+      height: 100%;
+      width: 40%;
+      font-size: x-large;
+      border: unset;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+  }
+}
+
+
+
+@media only screen and (max-width: 500px) {
+  .home-banner{
+    height: max-content;
+    .our-story{
+      top: 90%;
+    }
+    h1{
+      font-size: 2.125rem;
+    }
+    h2{
+      font-size: 1rem;
+    }
+    .shadow{
+      display: none;
+    }
+    .our-story{
+      display: none;
+    }
+  }
+}
