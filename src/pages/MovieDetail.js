@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import { fetchMovieDetails } from "../services/apiService";
-import { MOVIE_DATA } from "../Utils/MovieData";
 import Navbar from "../components/Navbar";
 import "../styles/MovieDetail.scss";
 import Loader from "../components/Loader";

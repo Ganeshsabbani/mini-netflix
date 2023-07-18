@@ -7,13 +7,13 @@ const MovieList = () => {
 
   const handleScrollLeft = () => {
     if (containerRef.current) {
-      containerRef.current.scrollLeft -= 100; // Adjust the scroll distance as per your requirement
+      containerRef.current.scrollLeft -= 100; 
     }
   };
 
   const handleScrollRight = () => {
     if (containerRef.current) {
-      containerRef.current.scrollLeft += 100; // Adjust the scroll distance as per your requirement
+      containerRef.current.scrollLeft += 100;
     }
   };
   return (
