@@ -10,12 +10,13 @@ const MovieDetail = () => {
   const queryParams = new URLSearchParams(window.location.search);
   const id = queryParams.get("movie_id");
   const [loading, setLoading] = useState(false);
+
   window.scrollTo(0, 0);
+
   useEffect(() => {
     fetchMovieDetails(id, setMovieData, setLoading);
   }, [id]);
 
-  console.log(movieData);
   return (
     <>
       <Navbar />
@@ -30,7 +31,7 @@ const MovieDetail = () => {
                 <h3>Description:</h3>
                 <h4> {movieData.Plot}</h4>
               </div>
-              <h3>IMDB Rating: {movieData.imdbRating}</h3>
+              <h3>IMDB Rating :&nbsp;{movieData.imdbRating}</h3>
             </div>
           </div>
         )}
